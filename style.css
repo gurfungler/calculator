@@ -15,27 +15,57 @@
 #buttons {
     flex-wrap: wrap;
     background-color: red;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: space-around;
     width: 300px;
-    height: 500px;
+    height: 480px;
 }
 
 #display {
     background-color: grey;
     width: 300px;
-    height: 125px;  
+    height: 120px;  
+    justify-content: space-between;
+    align-items: flex-end;
+
 }
 
 .button {
     width: 24%;
     height: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #number {
     background-color: white;
+    font-weight: 500;
 }
 
-.expression {
+#operator {
     background-color: lightgray;
+}
+
+#equals {
+    background-color: rgb(169, 182, 185);
+}
+
+#number.hovered,
+#operator.hovered {
+    background-color: green;
+}
+
+#number.hovered.click,
+#operator.hovered.click
+{
+    background-color: darkgray;
+}
+
+
+#equals.hovered {
+    background-color: blue;
+}
+#equals.hovered.click {
+    background-color: darkblue;
 }
